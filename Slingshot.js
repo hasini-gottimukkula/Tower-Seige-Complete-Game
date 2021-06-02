@@ -18,6 +18,7 @@ class SlingShot {
             var pointB = this.pointB;
             push();
             strokeWeight(4);
+            stroke(255);
             line(bodyA.x, bodyA.y, pointB.x, pointB.y);
             pop();
         }
@@ -28,7 +29,7 @@ class SlingShot {
         this.sling.bodyA = null;
     }
     attach(body) {
-        this.sling.bodyA = null;
+        this.sling.bodyA = body;
     }
 }
 

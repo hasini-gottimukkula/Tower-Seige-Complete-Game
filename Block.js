@@ -3,9 +3,9 @@ class Block {
         var options = {
             isStatic: false,
             restitution: 0.1,
-            friction: 0.01,
-            density: 0.02
+            friction: 0
         }
+
         this.visibility = 255;
         this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
